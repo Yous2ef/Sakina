@@ -206,7 +206,7 @@ export function DhikrCard({
                             {reference && (
                                 <ReferenceButton
                                     onClick={() => setShowReference(true)}
-                                    size="sm"
+                                    size="lg"
                                 />
                             )}
                         </div>

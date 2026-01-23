@@ -29,9 +29,10 @@ export function ReferenceButton({
             "border-2 border-amber-400 dark:border-amber-600 text-amber-600 dark:text-amber-400",
     };
 
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.stopPropagation();
         lightTap();
-        onClick?.();
+        onClick?.(e);
     };
 
     return (

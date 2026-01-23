@@ -58,7 +58,7 @@ const App = () => {
                         </AnimatePresence>
 
                         {/* PWA Components */}
-                        <OfflineIndicator />
+                        {/* <OfflineIndicator /> */}
                         <InstallPrompt />
                         <NotificationInitializer />
                     </div>
