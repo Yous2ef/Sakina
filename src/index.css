@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/* Enable dark mode via class */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom Font Family */
+@theme {
+    --font-amiri: "Amiri", serif;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Arabic Text */
+.font-amiri {
+    font-family: "Amiri", serif;
+}
+
+/* Safe Area for iOS */
+.safe-area-top {
+    padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Hide Scrollbar but allow scrolling */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Custom Selection Color */
+::selection {
+    background-color: rgba(27, 94, 32, 0.3);
+    color: inherit;
+}
+
+/* Focus Visible for Accessibility */
+:focus-visible {
+    outline: 2px solid #1b5e20;
+    outline-offset: 2px;
+}
+
+/* Dark mode focus */
+@media (prefers-color-scheme: dark) {
+    :focus-visible {
+        outline-color: #81c784;
+    }
+}
+
+/* Prevent text selection on interactive elements */
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Touch Action for better scrolling */
+.touch-pan-y {
+    touch-action: pan-y;
+}
+
+/* Counter text - prevent selection during counting */
+.counter-text {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+/* Safe area padding for bottom nav */
+.pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+}
+
+/* Smooth page transitions */
+.page-transition {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading shimmer effect */
+.shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Dark mode shimmer */
+.dark .shimmer {
+    background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+    background-size: 200% 100%;
+}
+
+/* Font Size Settings */
+html.font-small {
+    font-size: 16px;
+}
+
+html.font-medium {
+    font-size: 18px;
+}
+
+html.font-large {
+    font-size: 20px;
+}
+
+/* Apply larger font sizes to Dhikr text specifically */
+.font-small .dhikr-text {
+    font-size: 1.32rem;
+}
+
+.font-medium .dhikr-text {
+    font-size: 1.5rem;
+}
+
+.font-large .dhikr-text {
+    font-size: 1.75rem;
+}
+
+/* Counter number sizes */
+.font-small .counter-number {
+    font-size: 2.5rem;
+}
+
+.font-medium .counter-number {
+    font-size: 3rem;
+}
+
+.font-large .counter-number {
+    font-size: 3.5rem;
+}

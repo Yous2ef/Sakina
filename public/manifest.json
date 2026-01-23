@@ -1,0 +1,90 @@
+{
+    "name": "سَكِينَة - تطبيق الأذكار والأدعية",
+    "short_name": "سَكِينَة",
+    "description": "تطبيق إسلامي للأذكار والأدعية - أذكار الصباح والمساء، صلاة التسبيح، مفاتيح الفرج. يساعدك على المحافظة على أذكارك اليومية",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0D1117",
+    "theme_color": "#1B5E20",
+    "orientation": "portrait",
+    "scope": "/",
+    "lang": "ar",
+    "dir": "rtl",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "categories": ["lifestyle", "utilities", "education"],
+    "shortcuts": [
+        {
+            "name": "أذكار الصباح",
+            "short_name": "الصباح",
+            "description": "30 ذكر كامل مع الفضائل والمصادر",
+            "url": "/morning",
+            "icons": [
+                {
+                    "src": "icons/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "أذكار المساء",
+            "short_name": "المساء",
+            "description": "27 ذكر كامل مع الفضائل والمصادر",
+            "url": "/evening",
+            "icons": [
+                {
+                    "src": "icons/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "صلاة التسبيح",
+            "short_name": "التسبيح",
+            "description": "دليل كامل لصلاة التسبيح",
+            "url": "/tasbih-prayer",
+            "icons": [
+                {
+                    "src": "icons/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "مفاتيح الفرج",
+            "short_name": "الفرج",
+            "description": "وصفات روحانية من كتاب مفاتيح الفرج",
+            "url": "/keys-to-relief",
+            "icons": [
+                {
+                    "src": "icons/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}
