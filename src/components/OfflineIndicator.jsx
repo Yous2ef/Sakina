@@ -15,8 +15,8 @@ export function OfflineIndicator() {
             {isOffline && (
                 <motion.div
                     {...offlineToastVariants}
-                    className="fixed top-3 left-2 z-50 flex justify-center">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-full shadow-lg">
+                    className="fixed top-4 left-10 z-50 flex justify-center">
+                    <div className="flex items-center gap-2 px-4 py-2 text-black rounded-full ">
                         <RiWifiOffLine className="w-4 h-4" />
                         {/* <span className="text-sm font-medium">
                             وضع بدون إنترنت
