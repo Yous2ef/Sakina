@@ -20,19 +20,20 @@ export default {
     dedication: {
         enabled: true,
         title: "إهداء",
-        recipient: "محمود عبدالقادر",
-        recipientEn: "Mahmoud Abdelqader",
-        message: "رحمةً ونوراً على والدي محمود عبدالقادر • كان نعم الوالد",
-        note: "هذا التطبيق صدقة جارية له ولجميع أموات المسلمين",
+        recipient: "محمود عبدالقادر و مختار عطيه",
+        recipientEn: "Mahmoud Abdelqader and Mokhtar Atiya",
+        message:
+            "صدقة جارية على والدي 'محمود عبدالقادر' وعلي 'مختار عطيه' والد صديقي • كانوا نعم الاباء والأصدقاء • رحمهم الله وجعل مثواهم الجنة",
+        note: "هذا التطبيق صدقة جارية لهم ولجميع أموات المسلمين",
         openSource: "التطبيق مفتوح المصدر ليكون صدقة جارية مستمرة",
-        doaa: "اللهم اجعل هذا العمل صدقة جارية له ولجميع أموات المسلمين",
+        doaa: "اللهم اجعل هذا العمل صدقة جارية لهم ولجميع أموات المسلمين",
     },
 
     links: {
-        github: "https://github.com/Yous2ef/SalatAltasbih",
-        repository: "https://github.com/Yous2ef/SalatAltasbih",
-        issues: "https://github.com/Yous2ef/SalatAltasbih/issues",
-        discussions: "https://github.com/Yous2ef/SalatAltasbih/discussions",
+        github: "https://github.com/Yous2ef/Sakina",
+        repository: "https://github.com/Yous2ef/Sakina",
+        issues: "https://github.com/Yous2ef/Sakina/issues",
+        discussions: "https://github.com/Yous2ef/Sakina/discussions",
     },
 
     // Localization
