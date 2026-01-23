@@ -5,6 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vite.dev/config/
 export default defineConfig({
+    base: "/Sakina/",
     plugins: [
         react(),
         tailwindcss(),
@@ -25,8 +26,8 @@ export default defineConfig({
                 background_color: "#0D1117",
                 display: "standalone",
                 orientation: "portrait",
-                start_url: "/",
-                scope: "/",
+                start_url: "/Sakina/",
+                scope: "/Sakina/",
                 lang: "ar",
                 dir: "rtl",
                 categories: ["lifestyle", "utilities", "education"],
@@ -53,7 +54,7 @@ export default defineConfig({
                         name: "أذكار الصباح",
                         short_name: "الصباح",
                         description: "30 ذكر كامل مع الفضائل والمصادر",
-                        url: "/morning",
+                        url: "/Sakina/morning",
                         icons: [
                             { src: "icons/icon-192.png", sizes: "192x192" },
                         ],
@@ -62,7 +63,7 @@ export default defineConfig({
                         name: "أذكار المساء",
                         short_name: "المساء",
                         description: "27 ذكر كامل مع الفضائل والمصادر",
-                        url: "/evening",
+                        url: "/Sakina/evening",
                         icons: [
                             { src: "icons/icon-192.png", sizes: "192x192" },
                         ],
@@ -71,7 +72,7 @@ export default defineConfig({
                         name: "صلاة التسبيح",
                         short_name: "التسبيح",
                         description: "دليل كامل لصلاة التسبيح",
-                        url: "/tasbih-prayer",
+                        url: "/Sakina/tasbih-prayer",
                         icons: [
                             { src: "icons/icon-192.png", sizes: "192x192" },
                         ],
@@ -80,7 +81,7 @@ export default defineConfig({
                         name: "مفاتيح الفرج",
                         short_name: "الفرج",
                         description: "وصفات روحانية من كتاب مفاتيح الفرج",
-                        url: "/keys-to-relief",
+                        url: "/Sakina/keys-to-relief",
                         icons: [
                             { src: "icons/icon-192.png", sizes: "192x192" },
                         ],

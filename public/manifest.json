@@ -2,12 +2,12 @@
     "name": "سَكِينَة - تطبيق الأذكار والأدعية",
     "short_name": "سَكِينَة",
     "description": "تطبيق إسلامي للأذكار والأدعية - أذكار الصباح والمساء، صلاة التسبيح، مفاتيح الفرج. يساعدك على المحافظة على أذكارك اليومية",
-    "start_url": "/",
+    "start_url": "/Sakina/",
     "display": "standalone",
     "background_color": "#0D1117",
     "theme_color": "#1B5E20",
     "orientation": "portrait",
-    "scope": "/",
+    "scope": "/Sakina/",
     "lang": "ar",
     "dir": "rtl",
     "icons": [
@@ -42,7 +42,7 @@
             "name": "أذكار الصباح",
             "short_name": "الصباح",
             "description": "30 ذكر كامل مع الفضائل والمصادر",
-            "url": "/morning",
+            "url": "/Sakina/morning",
             "icons": [
                 {
                     "src": "icons/icon-192.png",
@@ -54,7 +54,7 @@
             "name": "أذكار المساء",
             "short_name": "المساء",
             "description": "27 ذكر كامل مع الفضائل والمصادر",
-            "url": "/evening",
+            "url": "/Sakina/evening",
             "icons": [
                 {
                     "src": "icons/icon-192.png",
@@ -66,7 +66,7 @@
             "name": "صلاة التسبيح",
             "short_name": "التسبيح",
             "description": "دليل كامل لصلاة التسبيح",
-            "url": "/tasbih-prayer",
+            "url": "/Sakina/tasbih-prayer",
             "icons": [
                 {
                     "src": "icons/icon-192.png",
@@ -78,7 +78,7 @@
             "name": "مفاتيح الفرج",
             "short_name": "الفرج",
             "description": "وصفات روحانية من كتاب مفاتيح الفرج",
-            "url": "/keys-to-relief",
+            "url": "/Sakina/keys-to-relief",
             "icons": [
                 {
                     "src": "icons/icon-192.png",
