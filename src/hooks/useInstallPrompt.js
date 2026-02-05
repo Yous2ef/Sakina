@@ -31,6 +31,10 @@ export function useInstallPrompt() {
 
         // Listen for successful install
         const handleAppInstalled = () => {
+            // Track installation in Umami Analytics
+            if (typeof window !== "undefined" && window.umami) {
+                window.umami.track("app-installed");
+            }
             setIsInstalled(true);
             setInstallPrompt(null);
             setIsInstallable(false);
@@ -75,15 +79,10 @@ export function useInstallPrompt() {
     const dismissPrompt = () => {
         setInstallPrompt(null);
         setIsInstallable(false);
-        // Remember dismissal for this session
-        sessionStorage.setItem("sakina-install-dismissed", "true");
     };
 
-    const wasDismissed =
-        sessionStorage.getItem("sakina-install-dismissed") === "true";
-
     return {
-        canInstall: isInstallable && !wasDismissed,
+        canInstall: isInstallable,
         isInstalled,
         isInstallable,
         install,

@@ -22,3 +22,6 @@ export { NotificationBadge, NotificationDot } from "./NotificationBadge";
 export { OfflineIndicator, OfflineBanner } from "./OfflineIndicator";
 export { InstallPrompt } from "./InstallPrompt";
 export { NotificationInitializer } from "./NotificationInitializer";
+
+// Analytics
+export { AnalyticsDashboard } from "./AnalyticsDashboard";

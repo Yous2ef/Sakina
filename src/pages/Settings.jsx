@@ -19,6 +19,7 @@ import {
     RiCodeSSlashLine,
     RiExternalLinkLine,
 } from "react-icons/ri";
+import { AnalyticsDashboard } from "../components/AnalyticsDashboard";
 import { Header } from "../components/Header";
 import { BottomNav } from "../components/BottomNav";
 import { Toggle } from "../components/Toggle";
@@ -535,7 +536,7 @@ export function Settings() {
                 </motion.section>
 
                 {/* Install PWA */}
-                {canInstall && (
+                {!isInstalled && (
                     <motion.section
                         {...slideUp}
                         transition={{ delay: 0.3 }}
@@ -545,15 +546,23 @@ export function Settings() {
                             <div className="flex-1">
                                 <h3 className="font-bold">ثبّت التطبيق</h3>
                                 <p className="text-sm text-emerald-100">
-                                    أضف سَكِينَة للشاشة الرئيسية
+                                    {canInstall
+                                        ? "أضف سَكِينَة للشاشة الرئيسية"
+                                        : "استخدم قائمة المتصفح للتثبيت"}
                                 </p>
                             </div>
-                            <Button
-                                variant="secondary"
-                                size="sm"
-                                onClick={handleInstall}>
-                                تثبيت
-                            </Button>
+                            {canInstall ? (
+                                <Button
+                                    variant="secondary"
+                                    size="sm"
+                                    onClick={handleInstall}>
+                                    تثبيت
+                                </Button>
+                            ) : (
+                                <span className="text-xs bg-white/20 px-3 py-2 rounded-lg">
+                                    ⋮ → تثبيت
+                                </span>
+                            )}
                         </div>
                     </motion.section>
                 )}
@@ -608,6 +617,14 @@ export function Settings() {
                     <p className="mt-3 text-xs text-gray-500 dark:text-gray-400 text-center">
                         تحذير: لا يمكن التراجع عن حذف البيانات
                     </p>
+                </motion.section>
+
+                {/* Analytics Dashboard */}
+                <motion.section
+                    {...slideUp}
+                    transition={{ delay: 0.45 }}
+                    className="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <AnalyticsDashboard />
                 </motion.section>
 
                 {/* About Section */}
