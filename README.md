@@ -4,7 +4,7 @@
 
 > **ذكر المسلم** - تطبيق إسلامي للأذكار والأدعية
 
-[![الإصدار](https://img.shields.io/badge/الإصدار-1.0.1-green)](https://github.com/Yous2ef/Sakina/releases)
+[![الإصدار](https://img.shields.io/badge/الإصدار-1.0.2-green)](https://github.com/Yous2ef/Sakina/releases)
 [![الرخصة](https://img.shields.io/badge/مفتوح_المصدر-صدقة_جارية-blue)](https://github.com/Yous2ef/Sakina)
 [![التطبيق](https://img.shields.io/badge/جرب_التطبيق-سَكِينَة-emerald)](https://yous2ef.github.io/Sakina)
 

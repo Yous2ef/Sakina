@@ -8,7 +8,7 @@ export default {
     appName: "سَكِينَة",
     appNameEn: "Sakina",
     appSubtitle: "ذكر المسلم",
-    version: "1.0.1",
+    version: "1.0.2",
 
     // Developer & Links
     developer: {
